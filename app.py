@@ -6,7 +6,7 @@ visitors_count = 0
 
 
 @app.route("/")
-def hello_world():
+def HelloWorld():
     return "Hello, World!"
 
 
@@ -24,6 +24,7 @@ def visit():
         return jsonify({"message": f"Welcome, {username}!"}), 200
     else:
         return jsonify({"error": "No username provided!"}), 400
+
 
 @app.route("/divide", methods=["GET"])
 def divide():
