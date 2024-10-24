@@ -36,6 +36,11 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+
       - name: SonarQube Scanner
         run: |
           curl -sSLo sonar-scanner-cli.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
