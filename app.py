@@ -5,7 +5,7 @@ app = Flask(__name__)
 visitors_count = 0
 
 @app.route("/")
-def HelloWorld():
+def hello_world():
     return "Hello, World!"
 
 
